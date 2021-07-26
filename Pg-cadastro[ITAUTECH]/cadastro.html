@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro Pessoal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/estilo.css'>
+    <script src='JS/mascara.js'></script>
+    <script src="JS/validar.js"></script>
+</head>
+
+<body>
+
+    <div id="content">
+        <center> <span>    <h4>Faça seu cadastro.</h4></span></center>
+        <div>* obrigatórios</div>
+        <div>
+
+            <form method="POST" action="enviar.html" onsubmit="return check_form()"> <label> * Nome:</label>
+                <input type="text" name="nome" id="nome" class=" required campos"><br> <label>* CPF:</label>
+                <input type='text' name='cpfcnpj' class=" required campos" onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' id="cpf"><br> <label>RG:</label> <input type="text" name="rg" id="rg" class="campos" /><br><label>Sexo:</label>
+                <input type="radio" name="sexo" value " id=feminino">Faminino
+                <input type="radio" name="sexo" value " id=masculino">Masculino
+
+                <br> <label>Telefone fixo:</label><input type="text" class="campos" name="telefone" id="telefone" onkeypress="mascara(this)"><br>
+                <label>* Telefone celular:</label>
+
+
+                <input type="text" name="telefone" class=" required campos" id="telefonecelular" /><br>
+
+
+
+                <label>CEP:</label>
+                <input type="text" id="cep" class="campos" maxlength="8" onkeyup="mask.init(this, mask.cep)" /><br> <label>* Endereco:</label>
+                <input class=" required campos" type="text" name="endereco" id="endereco"><br> <label>* Numero:</label> <input type="number" name="numero" id="numero" class="required campos"><br> <label>Estado:</label> <select class="campos">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+            </select>
+
+
+                <br> <label>Data</label>
+                <input class="campos" type="date" name="data"><br>
+
+
+
+                <input type="submit" class="botao" onclick="validar()" value="Cadastrar" />
+
+        </div>
+
+
+
+
+</body>
+
+
+
+</form>
+</div>
+
+
+</body>
+
+</html>
