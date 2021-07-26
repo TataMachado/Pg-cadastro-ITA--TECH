@@ -1,0 +1,88 @@
+#content {
+    width: 35%;
+    border: 1px solid black;
+    margin: 5%;
+    margin-left: 25%;
+    padding: 2%;
+    background-color: burlywood;
+    position: relative;
+    top: -20px;
+}
+
+form {
+    margin-left: 10%;
+}
+
+input {
+    padding: 6px;
+    margin: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select {
+    padding: 6px;
+    margin: 8px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.campos {
+    width: 50%;
+}
+
+label {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.botao {
+    position: relative;
+    top: 5%;
+    left: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+body {
+    background-color: black;
+}
+
+#menu {
+    height: 150px;
+    background-color: white;
+    padding-left: 35px;
+    padding-top: 5px;
+}
+
+h3 {
+    margin-left: 75%;
+    padding-right: 10px;
+}
+
+li {
+    color: white;
+    list-style: none;
+    margin-top: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    background-color: aqua;
+}
